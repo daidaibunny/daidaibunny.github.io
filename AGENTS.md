@@ -3,6 +3,9 @@
 - Test-driven development is disabled, as explicitly chosen by the user.
 - Use TypeScript, functional modules, and one-tab indentation.
 - Follow UC San Diego's current official color, typography, and graphic guidance.
+- Keep blue confined to the top navigation; use white backgrounds and restrained typography.
+- Follow the supplied mature academic homepage references; no decorative hero or marketing copy.
+- Separate research, publications, projects, CV, and contact into pages with navigation submenus.
 - Use free, self-hosted fonts and GitHub Pages; no paid services or server runtime.
 - Preserve the user's preferred existing `main` branch.
 - Keep biography and project claims grounded in supplied or verified sources.
