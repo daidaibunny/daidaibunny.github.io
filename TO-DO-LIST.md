@@ -10,6 +10,8 @@
 - [x] Check keyboard access, mobile layout, interactions, types, lint, and production build.
 - [x] Configure free GitHub Pages deployment and automatic quality checks.
 - [x] Commit, push, and verify the published website at https://daidaibunny.github.io/.
+- [ ] Choose a free GitHub Pages address based on Yiwei Li with a short suffix.
+- [ ] Add the supplied portrait, check desktop and mobile layouts, and publish.
 
 Validation: all six routes and public assets respond successfully; the custom missing-page
 response returns 404. Desktop, 390-pixel mobile navigation, keyboard focus, and navigation

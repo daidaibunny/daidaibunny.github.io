@@ -2,6 +2,7 @@
 export const profile = {
 	name: "Yiwei Li",
 	chineseName: "李奕纬",
+	portrait: "/images/yiwei-li.jpg",
 	email: "yil464@ucsd.edu",
 	github: "https://github.com/daidaibunny",
 	location: "La Jolla, California",

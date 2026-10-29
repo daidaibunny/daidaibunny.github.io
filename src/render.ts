@@ -64,9 +64,15 @@ const siteHeader = (page: PageName): string => `
 
 const sidebar = (): string => `
 	<aside class="profile-sidebar" aria-label="Profile">
-		<p class="profile-name">${escapeHtml(profile.name)} <span lang="zh">${escapeHtml(profile.chineseName)}</span></p>
-		<p>${escapeHtml(profile.role)}<br>${escapeHtml(profile.field)}</p>
-		<p><a href="${escapeHtml(profile.institutionUrl)}">${escapeHtml(profile.institution)}</a><br>${escapeHtml(profile.location)}</p>
+		<div class="profile-portrait">
+			<img src="${escapeHtml(profile.portrait)}" alt="${escapeHtml(profile.name)}"
+				width="1280" height="1280" decoding="async">
+		</div>
+		<div class="profile-details">
+			<p class="profile-name">${escapeHtml(profile.name)} <span lang="zh">${escapeHtml(profile.chineseName)}</span></p>
+			<p>${escapeHtml(profile.role)}<br>${escapeHtml(profile.field)}</p>
+			<p><a href="${escapeHtml(profile.institutionUrl)}">${escapeHtml(profile.institution)}</a><br>${escapeHtml(profile.location)}</p>
+		</div>
 		<ul class="profile-links">
 			<li><a href="mailto:${profile.email}">Email</a></li>
 			<li><a href="${profile.github}">GitHub</a></li>

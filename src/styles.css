@@ -186,6 +186,21 @@ p + p {
 	font-size: 13px;
 	line-height: 1.8;
 }
+.profile-portrait {
+	width: 190px;
+	aspect-ratio: 1;
+	overflow: hidden;
+	margin-bottom: 22px;
+	border-radius: 2px;
+}
+.profile-portrait > img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.6);
+	transform-origin: 50% 28%;
+}
 .profile-name {
 	font-family: "Teko", "Arial Narrow", sans-serif;
 	font-weight: 500;
@@ -201,7 +216,7 @@ p + p {
 	letter-spacing: 3px;
 	margin-top: 9px;
 }
-.profile-sidebar > :where(p + p) {
+.profile-details > :where(p + p) {
 	margin-top: 18px;
 }
 .profile-sidebar a {
@@ -452,22 +467,30 @@ p + p {
 		min-height: calc(100vh - 122px);
 	}
 	.profile-sidebar {
+		display: grid;
+		grid-template-columns: 96px minmax(0, 1fr);
+		column-gap: 20px;
 		padding-bottom: 23px;
 		border-bottom: 1px solid #e7e7e7;
+	}
+	.profile-portrait {
+		width: 96px;
+		margin-bottom: 0;
 	}
 	.profile-name {
 		font-size: 33px;
 		margin-bottom: 12px;
 	}
 	.profile-name > span {
-		display: inline;
-		margin-left: 14px;
+		display: block;
+		margin-top: 4px;
 		font-size: 14px;
 	}
-	.profile-sidebar > :where(p + p) {
+	.profile-details > :where(p + p) {
 		margin-top: 10px;
 	}
 	.profile-links {
+		grid-column: 1 / -1;
 		display: flex;
 		gap: 20px;
 		flex-wrap: wrap;
